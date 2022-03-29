@@ -9,7 +9,7 @@ func compare(value int) string {
 
 	//Insert your code from here
 	if value == secretValue {
-		fmt.Println("Well Done! Your guess is correct")
+		fmt.Println("Well Done! Your guess is correct.")
 	}
 	if value < secretValue {
 		fmt.Println("Too low, try again next time!")
@@ -24,7 +24,7 @@ func compare(value int) string {
 
 func main() {
 	var guess int
-	fmt.Println("Enter an integer value: ")
+	fmt.Printf("Enter an integer value: ")
 	fmt.Scanln(&guess)
 	compare(guess)
 }
